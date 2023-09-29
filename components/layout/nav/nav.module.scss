@@ -1,0 +1,36 @@
+/* Header.module.scss */
+@import "../../../app/globals.scss";
+
+.header {
+  background-color: $dark-background;
+  border-bottom: 1px solid $dark-secondary;
+  padding: 20px;
+
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    li {
+      margin: 0;
+      padding: 0;
+    }
+
+    .button {
+      background-color: $light-primary;
+      color: $light-background;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $light-secondary;
+      }
+    }
+  }
+}

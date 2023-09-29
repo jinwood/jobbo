@@ -1,0 +1,15 @@
+@import "../../../app/globals.scss";
+
+.footer {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+}
