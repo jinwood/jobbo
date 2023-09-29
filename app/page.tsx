@@ -1,5 +1,11 @@
 import styles from "./page.module.scss";
 
 export default function Home() {
-  return <main className={styles.main}>Hello</main>;
+  return (
+    <main className={styles.main}>
+      <div>
+        <p>Youre not signed in</p>
+      </div>
+    </main>
+  );
 }
