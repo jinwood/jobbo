@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./nav.module.scss";
 
 export default function Nav() {
@@ -5,17 +6,26 @@ export default function Nav() {
     <header className={styles.header}>
       <nav>
         <ul className={styles.navList}>
-          <li>
-            <button className={styles.button}>Home</button>
+          <p className={styles.title}>Jobbo</p>
+          <li className={styles["link-box"]}>
+            <Link href="/" className={styles.link}>
+              Home
+            </Link>
           </li>
           <li>
-            <button className={styles.button}>About</button>
+            <Link href="/about" className={styles.link}>
+              About
+            </Link>
           </li>
           <li>
-            <button className={styles.button}>Services</button>
+            <Link href="/services" className={styles.link}>
+              Services
+            </Link>
           </li>
           <li>
-            <button className={styles.button}>Contact</button>
+            <Link href="/contact" className={styles.link}>
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>
